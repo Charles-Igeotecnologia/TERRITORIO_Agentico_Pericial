@@ -1,0 +1,16 @@
+{
+  "projeto": "Territorio Agentico Pericial",
+  "versao": "0.1.0",
+  "descricao": "Catalogo inicial de bases, documentos e produtos tecnico-cartograficos do ambiente pericial.",
+  "crs_preferencial": "SIRGAS 2000",
+  "categorias": [
+    {"id":"documentacao","pasta":"00_DOCUMENTACAO","descricao":"Escopo, metodologia, fontes, metadados e controle de versoes"},
+    {"id":"base_cartografica","pasta":"01_BASE_CARTOGRAFICA","descricao":"Camadas de referencia, limites e imagens"},
+    {"id":"imoveis_poligonais","pasta":"02_IMOVEIS_E_POLIGONAIS","descricao":"Plantas, memoriais, vertices e confrontacoes"},
+    {"id":"reconstituicao","pasta":"03_RECONSTITUICAO_CARTOGRAFICA","descricao":"Vetores, controles e georreferenciamento"},
+    {"id":"analise_espacial","pasta":"04_ANALISE_ESPACIAL","descricao":"Sobreposicoes, divergencias e resultados"},
+    {"id":"produtos","pasta":"05_PRODUTOS_PERICIAIS","descricao":"Notas tecnicas, laudos, plantas e memoriais descritivos"},
+    {"id":"webgis","pasta":"06_WEBGIS","descricao":"Frontend, dados publicados e configuracoes"},
+    {"id":"workflows","pasta":"07_WORKFLOWS_AGENTICOS","descricao":"Procedimentos operacionais dos agentes"}
+  ]
+}
