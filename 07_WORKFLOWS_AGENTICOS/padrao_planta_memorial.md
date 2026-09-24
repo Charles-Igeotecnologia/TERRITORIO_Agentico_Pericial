@@ -1,5 +1,7 @@
 # Padrão de Saída — Planta Georreferenciada e Memorial Descritivo
 
+**Versão operacional do projeto: 0.2.1**
+
 ## Finalidade
 Definir o modelo operacional obrigatório para geração de planta planimétrica/georreferenciada e memorial descritivo no Território Agêntico Pericial.
 
@@ -149,5 +151,14 @@ Quando solicitado o conjunto completo:
 3. Memorial descritivo em DOCX editável;
 4. Quando aplicável, conjunto PDF reunindo planta e memorial.
 
-## 6. Validação humana
+## 6. Sincronização de versão
+A versão declarada neste workflow deve permanecer idêntica à versão corrente do projeto registrada em:
+- `../README.md`;
+- `../catalogo.json`;
+- `../00_DOCUMENTACAO/CONTROLE_VERSOES.md`;
+- `../AGENTS.md`.
+
+Sempre que a versão do projeto for alterada, atualizar este arquivo na mesma operação.
+
+## 7. Validação humana
 Os produtos gerados automaticamente devem ser submetidos à revisão humana antes de uso oficial, assinatura ou emissão vinculada à responsabilidade técnica.
