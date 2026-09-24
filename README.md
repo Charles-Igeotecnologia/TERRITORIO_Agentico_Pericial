@@ -3,7 +3,7 @@
 Ambiente técnico para organização, análise e produção de informação territorial aplicada a atividades periciais, reconstituição cartográfica, georreferenciamento, análise espacial e geração de produtos técnico-documentais.
 
 ## Versão
-**v0.1.0 — estrutura-base operacional**
+**v0.2.1 — padrão operacional sincronizado**
 
 ## Objetivos
 - preservar rastreabilidade de documentos, bases e transformações;
@@ -13,7 +13,8 @@ Ambiente técnico para organização, análise e produção de informação terr
 - organizar bases cartográficas e dados de imóveis;
 - gerar mapas, tabelas, notas técnicas, laudos, plantas e memoriais;
 - preparar uma camada WebGIS para consulta e apresentação de resultados;
-- estabelecer workflows agênticos com revisão humana obrigatória.
+- estabelecer workflows agênticos com revisão humana obrigatória;
+- manter sincronização documental de versão em todos os arquivos que declaram a versão do projeto.
 
 ## Estrutura
 ```text
@@ -35,10 +36,22 @@ TERRITORIO_Agentico_Pericial/
 O projeto distingue documento-fonte, observação, dado derivado, inferência técnica e conclusão. Sistemas de referência espacial não devem ser presumidos. Toda transformação, reprojeção, georreferenciamento ou ajuste geométrico deve permanecer documentado.
 
 ## Fluxo principal
-**Documento → identificação espacial → validação do CRS → reconstituição → consistência geométrica → sobreposição/confrontação → produtos cartográficos → produto pericial → revisão humana.**
+**Documento → identificação espacial → validação do CRS → reconstituição → consistência geométrica → sobreposição/confrontação → produtos cartográficos → produto pericial → verificação documental e visual → revisão humana.**
 
 ## Governança agêntica
 As regras operacionais estão em [`AGENTS.md`](AGENTS.md). Os procedimentos especializados ficam em [`07_WORKFLOWS_AGENTICOS`](07_WORKFLOWS_AGENTICOS/).
 
+O padrão específico para planta georreferenciada e memorial descritivo está em:
+
+`07_WORKFLOWS_AGENTICOS/padrao_planta_memorial.md`
+
+## Controle de versão
+A versão declarada neste README deve ser idêntica à registrada em:
+- `catalogo.json`;
+- `00_DOCUMENTACAO/CONTROLE_VERSOES.md`;
+- demais documentos que exibam explicitamente a versão operacional do projeto.
+
+Qualquer atualização de versão deve alterar todos esses registros na mesma operação, evitando divergência documental.
+
 ## Situação atual
-A versão 0.1 estabelece o núcleo metodológico e documental. As próximas etapas são incorporar bases de referência, modelos de dados, rotinas de validação geoespacial e componentes do WebGIS.
+A versão **0.2.1** consolida o padrão de saída de planta georreferenciada e memorial descritivo, a geração obrigatória do memorial em PDF e DOCX editável, a prevenção de sobreposições de layout e a sincronização documental de versão.
