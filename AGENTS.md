@@ -1,5 +1,7 @@
 # AGENTS.md — Território Agêntico Pericial
 
+**Versão operacional do projeto: 0.2.1**
+
 ## Finalidade
 Orientar agentes de IA e colaboradores humanos na leitura, organização, análise e produção de resultados técnico-cartográficos e periciais.
 
@@ -14,6 +16,7 @@ Orientar agentes de IA e colaboradores humanos na leitura, organização, análi
 8. Produtos periciais devem indicar metodologia, fontes, limitações e responsabilidade técnica aplicável.
 9. Planta, quadro analítico e memorial devem utilizar uma única base técnica do caso, evitando divergências entre produtos.
 10. Sobreposição visual de elementos de layout deve ser tratada como erro e corrigida antes da entrega.
+11. Toda alteração de versão deve manter sincronizados os documentos de governança e catálogos que declarem a versão corrente.
 
 ## Fluxo agêntico padrão
 1. Leitura documental.
@@ -24,7 +27,7 @@ Orientar agentes de IA e colaboradores humanos na leitura, organização, análi
 6. Análise de confrontações e sobreposições.
 7. Geração de mapas, tabelas e métricas.
 8. Produção de nota técnica, laudo, planta ou memorial.
-9. Verificação de consistência numérica e de layout.
+9. Verificação de consistência numérica, documental e de layout.
 10. Revisão humana obrigatória antes de uso oficial.
 
 ## Regras de evidência
@@ -62,3 +65,14 @@ Regras essenciais:
 - memorial com textos justificados;
 - geração simultânea do memorial em PDF e DOCX editável;
 - conferência visual obrigatória contra sobreposições antes da entrega.
+
+## Sincronização documental
+Antes de concluir qualquer atualização de versão:
+1. conferir `README.md`;
+2. conferir `catalogo.json`;
+3. conferir `00_DOCUMENTACAO/CONTROLE_VERSOES.md`;
+4. localizar outros arquivos que declarem a versão corrente;
+5. atualizar todos para o mesmo número;
+6. pesquisar referências à versão anterior e corrigir aquelas que representem o estado atual.
+
+Referências históricas em changelog podem ser mantidas.
