@@ -1,8 +1,11 @@
 {
   "projeto": "Territorio Agentico Pericial",
-  "versao": "0.1.0",
-  "descricao": "Catalogo inicial de bases, documentos e produtos tecnico-cartograficos do ambiente pericial.",
-  "crs_preferencial": "SIRGAS 2000",
+  "versao": "0.2.1",
+  "data_atualizacao": "2026-09-24",
+  "descricao": "Catalogo de bases, documentos, produtos tecnico-cartograficos e workflows do ambiente pericial.",
+  "crs_preferencial": "SIRGAS 2000 quando aplicavel e documentado",
+  "politica_versao": "A versao deve permanecer sincronizada com README.md e 00_DOCUMENTACAO/CONTROLE_VERSOES.md.",
+  "padrao_planta_memorial": "07_WORKFLOWS_AGENTICOS/padrao_planta_memorial.md",
   "categorias": [
     {"id":"documentacao","pasta":"00_DOCUMENTACAO","descricao":"Escopo, metodologia, fontes, metadados e controle de versoes"},
     {"id":"base_cartografica","pasta":"01_BASE_CARTOGRAFICA","descricao":"Camadas de referencia, limites e imagens"},
