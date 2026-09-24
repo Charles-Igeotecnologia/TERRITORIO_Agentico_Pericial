@@ -1,5 +1,7 @@
 # 05 — Produtos Periciais
 
+**Versão operacional do projeto: 0.2.1**
+
 Área destinada aos produtos técnico-documentais consolidados.
 
 Subcategorias previstas:
@@ -26,3 +28,6 @@ O PDF e o DOCX devem derivar da mesma base técnica, mantendo coerência de coor
 
 ## Regra de qualidade
 Nenhum produto deve ser entregue com sobreposição de textos, linhas, quadrícula, legenda, escala, dados cadastrais ou tabela analítica.
+
+## Regra de versão
+A versão operacional indicada neste documento deve permanecer idêntica à versão corrente registrada em `../README.md`, `../catalogo.json` e `../00_DOCUMENTACAO/CONTROLE_VERSOES.md`.
