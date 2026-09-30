@@ -1,6 +1,6 @@
 # 05 — Produtos Periciais
 
-**Versão operacional do projeto: 0.2.1**
+**Versão operacional do projeto: 0.3.0**
 
 Área destinada aos produtos técnico-documentais consolidados.
 
@@ -26,8 +26,15 @@ Sempre gerar:
 
 O PDF e o DOCX devem derivar da mesma base técnica, mantendo coerência de coordenadas, distâncias, azimutes, área, perímetro e confrontações.
 
+## Produtos REURB
+Quando o caso for de Regularização Fundiária Urbana, aplicar também:
+
+`../07_WORKFLOWS_AGENTICOS/agente_reurb.md`
+
+Entre os produtos possíveis estão mapa diagnóstico, planta do perímetro, planta de parcelamento/unidades, quadros de áreas e vértices, matriz de situação cadastral/documental, relatório técnico, checklist de pendências e versão A4 sintética.
+
 ## Regra de qualidade
-Nenhum produto deve ser entregue com sobreposição de textos, linhas, quadrícula, legenda, escala, dados cadastrais ou tabela analítica.
+Nenhum produto deve ser entregue com sobreposição de textos, linhas, quadrícula, legenda, escala, dados cadastrais ou tabela analítica. Rótulos devem reproduzir fielmente a informação da base técnica; quando não houver espaço, reposicionar ou redimensionar sem alterar o conteúdo.
 
 ## Regra de versão
 A versão operacional indicada neste documento deve permanecer idêntica à versão corrente registrada em `../README.md`, `../catalogo.json` e `../00_DOCUMENTACAO/CONTROLE_VERSOES.md`.
