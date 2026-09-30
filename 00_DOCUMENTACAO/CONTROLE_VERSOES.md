@@ -8,9 +8,19 @@ Usar versionamento semântico para o projeto: `MAJOR.MINOR.PATCH`.
 - **PATCH**: correção, ajuste documental, sincronização ou melhoria sem mudança estrutural.
 
 ## Estado atual
-- Versão: **0.2.1**
-- Data: 24/09/2026
-- Situação: estrutura-base operacional com padrão de saída para planta georreferenciada e memorial descritivo, incluindo controle de sincronização documental.
+- Versão: **0.3.0**
+- Data: 30/09/2026
+- Situação: núcleo pericial operacional com módulo especializado REURB integrado.
+
+## Alterações da versão 0.3.0
+- criação do `Agente Especialista REURB` em `07_WORKFLOWS_AGENTICOS/agente_reurb.md`;
+- manutenção do Território Agêntico Pericial como núcleo comum, sem duplicação do motor cartográfico;
+- inclusão de competências territoriais, cadastrais, fundiárias, urbanísticas, ambientais, documentais e registrais;
+- adoção de fluxo específico para diagnóstico, estruturação do núcleo, análise de restrições, consistência e produtos de REURB;
+- inclusão de modelo A4 sintético com vetores, pontos, linhas, rótulos essenciais, Norte, referência visual da quadrícula, área e perímetro;
+- reforço da regra de fidelidade entre fonte, banco técnico, rótulos e produtos;
+- inclusão de revisão humana obrigatória para enquadramentos jurídicos, registrais e administrativos;
+- atualização sincronizada de README, AGENTS, catálogo e produtos periciais.
 
 ## Alterações da versão 0.2.1
 - sincronização da versão declarada em todos os arquivos de governança que exibem a versão do projeto;
@@ -40,7 +50,7 @@ Antes de concluir a atualização, realizar uma busca no repositório pelas vers
 Versões históricas citadas no changelog podem permanecer, desde que estejam claramente identificadas como histórico.
 
 ## Regra contra divergência documental
-Nenhum commit de atualização de versão deverá deixar arquivos de governança com números de versão correntes diferentes. Se houver divergência, considerar a atualização incompleta.
+Nenhuma atualização de versão deverá deixar arquivos de governança com números de versão correntes diferentes. Se houver divergência, considerar a atualização incompleta.
 
 ## Registro mínimo por alteração
 Cada atualização relevante deve indicar:
