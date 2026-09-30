@@ -1,11 +1,20 @@
 {
   "projeto": "Territorio Agentico Pericial",
-  "versao": "0.2.1",
-  "data_atualizacao": "2026-09-24",
+  "versao": "0.3.0",
+  "data_atualizacao": "2026-09-30",
   "descricao": "Catalogo de bases, documentos, produtos tecnico-cartograficos e workflows do ambiente pericial.",
   "crs_preferencial": "SIRGAS 2000 quando aplicavel e documentado",
   "politica_versao": "A versao deve permanecer sincronizada com README.md e 00_DOCUMENTACAO/CONTROLE_VERSOES.md.",
   "padrao_planta_memorial": "07_WORKFLOWS_AGENTICOS/padrao_planta_memorial.md",
+  "agentes_especialistas": [
+    {
+      "id": "reurb",
+      "nome": "Agente Especialista REURB",
+      "arquivo": "07_WORKFLOWS_AGENTICOS/agente_reurb.md",
+      "herda_nucleo_pericial": true,
+      "revisao_humana_obrigatoria": true
+    }
+  ],
   "categorias": [
     {"id":"documentacao","pasta":"00_DOCUMENTACAO","descricao":"Escopo, metodologia, fontes, metadados e controle de versoes"},
     {"id":"base_cartografica","pasta":"01_BASE_CARTOGRAFICA","descricao":"Camadas de referencia, limites e imagens"},
@@ -14,6 +23,6 @@
     {"id":"analise_espacial","pasta":"04_ANALISE_ESPACIAL","descricao":"Sobreposicoes, divergencias e resultados"},
     {"id":"produtos","pasta":"05_PRODUTOS_PERICIAIS","descricao":"Notas tecnicas, laudos, plantas e memoriais descritivos"},
     {"id":"webgis","pasta":"06_WEBGIS","descricao":"Frontend, dados publicados e configuracoes"},
-    {"id":"workflows","pasta":"07_WORKFLOWS_AGENTICOS","descricao":"Procedimentos operacionais dos agentes"}
+    {"id":"workflows","pasta":"07_WORKFLOWS_AGENTICOS","descricao":"Procedimentos operacionais e agentes especialistas"}
   ]
 }
