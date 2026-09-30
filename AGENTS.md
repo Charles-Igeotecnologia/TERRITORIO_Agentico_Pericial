@@ -1,6 +1,6 @@
 # AGENTS.md — Território Agêntico Pericial
 
-**Versão operacional do projeto: 0.2.1**
+**Versão operacional do projeto: 0.3.0**
 
 ## Finalidade
 Orientar agentes de IA e colaboradores humanos na leitura, organização, análise e produção de resultados técnico-cartográficos e periciais.
@@ -17,6 +17,7 @@ Orientar agentes de IA e colaboradores humanos na leitura, organização, análi
 9. Planta, quadro analítico e memorial devem utilizar uma única base técnica do caso, evitando divergências entre produtos.
 10. Sobreposição visual de elementos de layout deve ser tratada como erro e corrigida antes da entrega.
 11. Toda alteração de versão deve manter sincronizados os documentos de governança e catálogos que declarem a versão corrente.
+12. Módulos especializados devem herdar as regras do núcleo e registrar explicitamente suas regras adicionais.
 
 ## Fluxo agêntico padrão
 1. Leitura documental.
@@ -65,6 +66,19 @@ Regras essenciais:
 - memorial com textos justificados;
 - geração simultânea do memorial em PDF e DOCX editável;
 - conferência visual obrigatória contra sobreposições antes da entrega.
+
+## Módulo Especialista REURB
+Para projetos de Regularização Fundiária Urbana, aplicar também:
+
+`07_WORKFLOWS_AGENTICOS/agente_reurb.md`
+
+O módulo REURB:
+- herda todas as regras do núcleo pericial;
+- não duplica o motor cartográfico;
+- acrescenta procedimentos territoriais, cadastrais, fundiários, urbanísticos, ambientais, documentais e registrais;
+- separa fatos, dados, hipóteses e interpretações;
+- exige validação humana para enquadramentos jurídicos, registrais e administrativos;
+- mantém área e perímetro como informações essenciais nos produtos de síntese.
 
 ## Sincronização documental
 Antes de concluir qualquer atualização de versão:
