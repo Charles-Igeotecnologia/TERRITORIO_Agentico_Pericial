@@ -3,7 +3,7 @@
 Ambiente técnico para organização, análise e produção de informação territorial aplicada a atividades periciais, reconstituição cartográfica, georreferenciamento, análise espacial e geração de produtos técnico-documentais.
 
 ## Versão
-**v0.2.1 — padrão operacional sincronizado**
+**v0.3.0 — módulo especializado REURB**
 
 ## Objetivos
 - preservar rastreabilidade de documentos, bases e transformações;
@@ -14,6 +14,7 @@ Ambiente técnico para organização, análise e produção de informação terr
 - gerar mapas, tabelas, notas técnicas, laudos, plantas e memoriais;
 - preparar uma camada WebGIS para consulta e apresentação de resultados;
 - estabelecer workflows agênticos com revisão humana obrigatória;
+- especializar o núcleo para fluxos de REURB sem duplicar o motor cartográfico;
 - manter sincronização documental de versão em todos os arquivos que declaram a versão do projeto.
 
 ## Estrutura
@@ -30,6 +31,7 @@ TERRITORIO_Agentico_Pericial/
 ├── 05_PRODUTOS_PERICIAIS/
 ├── 06_WEBGIS/
 └── 07_WORKFLOWS_AGENTICOS/
+    └── agente_reurb.md
 ```
 
 ## Princípios
@@ -41,9 +43,13 @@ O projeto distingue documento-fonte, observação, dado derivado, inferência t�
 ## Governança agêntica
 As regras operacionais estão em [`AGENTS.md`](AGENTS.md). Os procedimentos especializados ficam em [`07_WORKFLOWS_AGENTICOS`](07_WORKFLOWS_AGENTICOS/).
 
-O padrão específico para planta georreferenciada e memorial descritivo está em:
+Padrão de planta e memorial:
 
 `07_WORKFLOWS_AGENTICOS/padrao_planta_memorial.md`
+
+Agente Especialista REURB:
+
+`07_WORKFLOWS_AGENTICOS/agente_reurb.md`
 
 ## Controle de versão
 A versão declarada neste README deve ser idêntica à registrada em:
@@ -54,4 +60,4 @@ A versão declarada neste README deve ser idêntica à registrada em:
 Qualquer atualização de versão deve alterar todos esses registros na mesma operação, evitando divergência documental.
 
 ## Situação atual
-A versão **0.2.1** consolida o padrão de saída de planta georreferenciada e memorial descritivo, a geração obrigatória do memorial em PDF e DOCX editável, a prevenção de sobreposições de layout e a sincronização documental de versão.
+A versão **0.3.0** incorpora o **Agente Especialista REURB** ao núcleo pericial. O módulo herda os padrões cartográficos e documentais existentes e acrescenta diagnóstico territorial, organização cadastral/fundiária, análise de restrições, controle de pendências e produtos específicos de regularização fundiária urbana, sempre com rastreabilidade e revisão humana obrigatória.
